@@ -16,7 +16,7 @@ class Program
         //Prompt list for later
         Prompts randomPrompts = new Prompts();
         randomPrompts._smell = "What is something that smelled good today?";
-        randomPrompts._hard = "What is something diffucult you did today?";
+        randomPrompts._hard = "What is something difficult you did today?";
         randomPrompts._learn = "What is something you learned form your experiences today?";
         randomPrompts._sight = "What is something you saw today?";
         randomPrompts._smile = "What is somehting that made you smile today?";
