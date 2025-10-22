@@ -1,9 +1,10 @@
 using System;
 
-class Program
+class Program23
 {
     static void Main(string[] args)
     {
+        //InClassPractice
         Word23 word1 = new Word23("Jesus");
         Word23 word2 = new Word23("wept.");
         word1.Display();
