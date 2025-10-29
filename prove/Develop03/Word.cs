@@ -25,7 +25,10 @@ class Word
 
     public void Hide() //setter
     {
-        _revealed = false;
+        if(_revealed == true)
+        {
+            _revealed = false;
+        }
     }
 
     public bool GetRevealed() //getter
@@ -38,8 +41,8 @@ class Word
         return _word;
     }
     //AI wrote this override
-    public override string ToString()
-    {
-        return _word;
-    }
+//     public override string ToString()
+//     {
+//         return _word;
+//     }
 }

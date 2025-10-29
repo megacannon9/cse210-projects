@@ -18,6 +18,7 @@ class Scripture
         {
             _scriptureWords.Add(new Word(w));
         }
+
     }
     //Get Rendered Text
     public void DisplayScripture()
@@ -41,10 +42,26 @@ class Scripture
     }
 
     //Hide Words
+    public void HideScripture()
+    {
+        Random ScriptureRando = new Random();
+        foreach (Word word in _scriptureWords)
+        {
+            int index = ScriptureRando.Next(_scriptureWords.Count);
+            Word SelectedWord = _scriptureWords[index];
+            SelectedWord.Hide();
+            SelectedWord.Display();
+        }
+    }
+
 
     //Is Completely Hidden
 
     //setter
 
     //getter
+    public List<Word> getScriptureWords()
+    {
+        return _scriptureWords;
+    }
 }
