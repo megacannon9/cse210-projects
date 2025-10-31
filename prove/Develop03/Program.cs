@@ -20,9 +20,8 @@ class Program
             else
             {
                 Console.Clear();
-                ProgramScripture.DisplayScripture();
                 ProgramScripture.HideScripture();
-                Console.ReadLine();
+                Console.WriteLine();
             }
         }
     }

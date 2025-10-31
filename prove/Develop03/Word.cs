@@ -13,7 +13,7 @@ class Word
 
     public void Display()
     {
-        if (_revealed)
+        if (_revealed == true)
         {
             Console.Write(" " + _word);
         }

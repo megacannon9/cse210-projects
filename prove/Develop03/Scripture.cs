@@ -11,7 +11,7 @@ class Scripture
     //AI wrote this Scripture Constructor
     public Scripture()
     {
-        string text = "Jesus wept";
+        string text = "Jesus wept and whined all day";
         string[] words = text.Split(' ');
 
         foreach (string w in words)
@@ -45,12 +45,13 @@ class Scripture
     public void HideScripture()
     {
         Random ScriptureRando = new Random();
+        Console.Write($"{scriptureRef.DisplayReference()} \"");
+        int index = ScriptureRando.Next(_scriptureWords.Count);
+        _scriptureWords[index].Hide();
+        scriptureRef.DisplayReference();
         foreach (Word word in _scriptureWords)
         {
-            int index = ScriptureRando.Next(_scriptureWords.Count);
-            Word SelectedWord = _scriptureWords[index];
-            SelectedWord.Hide();
-            SelectedWord.Display();
+            word.Display();
         }
     }
 
